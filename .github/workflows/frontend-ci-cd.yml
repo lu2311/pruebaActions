@@ -26,4 +26,4 @@ jobs:
 
     steps:
       - name: Despliegue simulado
-        run: echo "Aquí iría el despliegue automático (ej: subir a GitHub Pages o servidor)"
+        run: echo "Aqui iria el despliegue automatico (ej: subir a GitHub Pages o servidor)"
