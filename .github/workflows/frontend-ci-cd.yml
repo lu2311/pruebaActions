@@ -1,0 +1,29 @@
+name: Frontend CI/CD
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Mostrar archivos
+        run: ls -R
+
+      - name: Simular build (puedes cambiar esto según tu stack)
+        run: echo "✅ ¡Build exitoso!"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Despliegue simulado
+        run: echo "🚀 Aquí iría el despliegue automático (ej: subir a GitHub Pages o servidor)"
