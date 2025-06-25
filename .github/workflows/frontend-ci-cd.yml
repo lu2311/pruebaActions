@@ -18,7 +18,7 @@ jobs:
         run: ls -R
 
       - name: Simular build (puedes cambiar esto según tu stack)
-        run: echo "✅ ¡Build exitoso!"
+        run: echo "¡Build exitoso!"
 
   deploy:
     needs: build
