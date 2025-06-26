@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout del código
+      - name: Checkout del codigo
         uses: actions/checkout@v4
 
       - name: Mostrar archivos
         run: ls -R
 
-      - name: Simular build (puedes cambiar esto según tu stack)
-        run: echo "✅ ¡Build exitoso!"
+      - name: Simular build
+        run: echo "Build exitoso"
 
   deploy:
     needs: build
@@ -26,4 +26,4 @@ jobs:
 
     steps:
       - name: Despliegue simulado
-        run: echo "🚀 Aquí iría el despliegue automático (ej: subir a GitHub Pages o servidor)"
+        run: echo "Aqui iria el despliegue automatico"
